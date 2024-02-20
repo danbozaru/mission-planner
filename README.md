@@ -64,7 +64,7 @@ ng test
 
 The app contains the following pages:
 
-- **Home** - Overview of the app 
+- **Home** - Overview of the app
 - **Planner** - Page to add mission waypoints
 - **Player** - Page to visualize the mission
 
@@ -72,8 +72,13 @@ The main navigation is handled through a sidenav menu.
 
 ## Developer Notes
 
-- Relevant instructions for other developers working on this project
-- Coding conventions, folder structure, etc
+- This project insists on all developers following the same coding standards for more feasible merges
+- This project adheres to the following coding standards:
+  - 168 character max line length for Typescript
+  - when developing, adhere to the rules found in `.editorconfig` and `.prettierrc`
+  - use Prettier and auto format on save
+  - CSS methodology: **BEM**
+  - folder structure: hierarchical route-based folder structure, with classical subfolders for core entities: components, services, guards, etc.
 
 ## Authors
 
