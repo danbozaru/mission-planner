@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .header {
   height: 140px;
   color: #ff524a;
@@ -11,8 +15,9 @@
     cursor: pointer;
   }
 }
+
 .sidenav {
-  height: calc(100vh - 140px);
+  height: calc(100% - 140px);
 
   &-menu {
     ul {
