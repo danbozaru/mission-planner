@@ -12,6 +12,6 @@ import { MatToolbarModule } from '@angular/material/toolbar';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'Mission Control';
-  projectGitUrl = 'https://github.com/danbozaru/mission-control';
+  appTitle = 'Mission Planner';
+  projectGitUrl = 'https://github.com/danbozaru/mission-planner';
 }
