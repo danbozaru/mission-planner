@@ -1,9 +1,49 @@
 .header {
+  height: 140px;
+  color: #ff524a;
+  background: #ececec;
+
   &-spacer {
     flex: 1 1 auto;
   }
   &-app-logo {
     height: 24px;
     cursor: pointer;
+  }
+}
+.sidenav {
+  height: calc(100vh - 140px);
+
+  &-menu {
+    ul {
+      width: 350px;
+      display: flex;
+      flex-direction: column;
+      list-style-type: none;
+      gap: 30px;
+      padding-top: 50px;
+
+      li {
+        padding: 0 10px;
+        a {
+          font-size: 21px;
+          color: #999;
+          font-weight: bold;
+          text-decoration: none;
+          &.active {
+            color: #ff524a;
+          }
+        }
+      }
+    }
+  }
+
+  &-container {
+    height: 100%;
+  }
+
+  &-content {
+    padding: 40px;
+    background: #fff;
   }
 }

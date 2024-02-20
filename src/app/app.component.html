@@ -1,9 +1,24 @@
 <mat-toolbar class="header">
   <a routerLink="/home" class="header-home-link"><img class="header-app-logo" src="assets/images/anybotics-logo-dark.png" alt="ANYbotics logo" /></a>
-  <button mat-icon-button class="header-burger-menu" aria-label="Main navigation menu">
+  <button mat-icon-button class="header-burger-menu" aria-label="Main navigation menu" (click)="toggleSidenav()">
     <mat-icon>menu</mat-icon>
   </button>
   <span class="header-app-title">{{ appTitle }}</span>
   <span class="header-spacer"></span>
   <a [href]="projectGitUrl" mat-icon-button class="header-git-link-icon" aria-label="Project Git link"><mat-icon>share</mat-icon></a>
 </mat-toolbar>
+<div class="sidenav">
+  <mat-drawer-container class="sidenav-container">
+    <mat-drawer mode="over" [(opened)]="sidenavVisible">
+      <nav class="sidenav-menu">
+        <ul>
+          <li><a routerLink="/home" routerLinkActive="active" (click)="closeSidenav()">Home</a></li>
+          <li><a routerLink="/planner" routerLinkActive="active" (click)="closeSidenav()">Planner</a></li>
+          <li><a routerLink="/player" routerLinkActive="active" (click)="closeSidenav()">Player</a></li>
+        </ul>
+      </nav>
+    </mat-drawer>
+
+    <mat-drawer-content class="sidenav-content"><router-outlet></router-outlet></mat-drawer-content>
+  </mat-drawer-container>
+</div>
