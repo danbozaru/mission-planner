@@ -1,0 +1,9 @@
+.header {
+  &-spacer {
+    flex: 1 1 auto;
+  }
+  &-app-logo {
+    height: 24px;
+    cursor: pointer;
+  }
+}
